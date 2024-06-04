@@ -25,11 +25,19 @@ header {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content:center;
+  justify-content:space-around;
   align-items: center;
   padding: 0.5rem;
   background: rebeccapurple;
   z-index: 1;
+}
+
+.logo-title{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content:space-between;
+  align-items: center;
 }
 
 .website-title {
@@ -321,6 +329,51 @@ header img {
 #goTop:hover {
   background-color: rgb(144, 71, 218);
 }
+
+/* Dark/Light Mode Switch Button */
+.switch{
+  position: relative;
+  display: flex;
+  background-color: rgb(65, 33, 99);
+  border-radius: 1000px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.switch span{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #f1f1f1;
+}
+
+.switch ::after{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 50%;
+  transition: .5s ease all;
+  box-shadow: 0 0 2 2 rgba(0,0,0,0.2);
+}
+
+.switch.active{
+  background: orange;
+}
+
+.switch.active ::after{
+  right: 0;
+  left: unset;
+}
+
 
 @media screen and (max-width: 750px) {
   .main, header {  
