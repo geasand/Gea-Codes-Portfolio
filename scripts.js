@@ -26,4 +26,20 @@ const btnSwitch = document.querySelector('#switch');
 btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active');
+
+    // Save Dark/Light Mode State in LocalStorage
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('dark-mode', 'true');
+    } else {
+        localStorage.setItem('dark-mode', 'false');
+    }
 });
+
+//Current Dark/Light Mode State
+if (localStorage.getItem('dark-mode') === 'true') {
+    document.body.classList.add('dark');
+    btnSwitch.classList.add('active');
+} else {
+    document.body.classList.remove('dark');
+    btnSwitch.classList.remove('active');
+}

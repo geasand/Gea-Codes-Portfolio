@@ -10,14 +10,15 @@ html {
 }
 
 
-body { 
+/*body { 
   width:100%;
   height:100%;
   background: radial-gradient(95.19% 95.19% at 51.25% 9.63%, #D6C6F7 0%, #8C5BEF 50%, #000E33 100%);
-
   font-family: 'Roboto Mono', monospace;
   scroll-behavior:smooth;
-}
+}*/
+
+
 
 header {
   position: sticky;
@@ -87,7 +88,7 @@ header img {
   align-items: center;
   width: 40%;
   margin: 0 1em 1em 4em;
-  background-color: #fff;
+  background-color: #09143C;
   color: gray;
   padding: 3em;
   gap: 15px;
@@ -96,10 +97,9 @@ header img {
 
 /* Timeline Container */
 .timeline {
-  background: #fff;
   width:60%;
   margin: 0 4em 1em 2em;
-  background-color: #fff;
+  background-color: #09143C;
   padding: 40px;
   z-index: 0;
 }
@@ -111,7 +111,7 @@ header img {
 }
 
 /* Card container */
-.card {
+/*.card {
   position: relative;
   margin: 0 0 20px 20px;
   padding: 30px 10px 10px 10px;
@@ -120,7 +120,7 @@ header img {
   border-radius: 8px;
   max-width: 100%;
   border-top: 4px solid whitesmoke;
-}
+}*/
 
 /*This is for the second card in the Timeline*/
 .card2 {
@@ -133,7 +133,7 @@ header img {
   max-width: 100%;
   padding: 30px 10px 10px 10px;
   gap: 10px;
-  background: #fff;
+  background: #09143C;
   color: gray;
   border-top: 4px solid whitesmoke;
 }
@@ -291,16 +291,14 @@ header img {
   margin-bottom: 5px;
 }
 
-.dp, .frame-dp{
+.dp-frame{
+  width: 270px;
+  border-radius: 50%;
   max-width: 100%;
   height: auto;
 }
 
-.dp-frame{
-  width: 270px;
-}
-
-.profile-pic{
+.dp{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -342,31 +340,35 @@ header img {
 }
 
 .switch span{
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
   display: block;
   background: none;
   color: #f1f1f1;
+}
+
+.fa-sun {
+  color: orange;
 }
 
 .switch ::after{
   position: absolute;
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 21px;
+  height: 21px;
   background: #f1f1f1;
-  top: 0;
+  top: 2px;
   left: 0;
   right: unset;
   border-radius: 50%;
-  transition: .5s ease all;
+  transition: 8s ease all;
   box-shadow: 0 0 2 2 rgba(0,0,0,0.2);
 }
 
-.switch.active{
-  background: orange;
+.switch.active {
+  background: rgb(65, 33, 99);
 }
 
 .switch.active ::after{
