@@ -26,7 +26,7 @@ header {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
   padding: 0.5rem;
   background: rebeccapurple;
@@ -88,7 +88,7 @@ header img {
   align-items: center;
   width: 40%;
   margin: 0 1em 1em 4em;
-  background-color: #09143C;
+  background-color: #fff;
   color: gray;
   padding: 3em;
   gap: 15px;
@@ -99,7 +99,7 @@ header img {
 .timeline {
   width:60%;
   margin: 0 4em 1em 2em;
-  background-color: #09143C;
+  background-color: #fff;
   padding: 40px;
   z-index: 0;
 }
@@ -133,7 +133,7 @@ header img {
   max-width: 100%;
   padding: 30px 10px 10px 10px;
   gap: 10px;
-  background: #09143C;
+  background: #fff;
   color: gray;
   border-top: 4px solid whitesmoke;
 }
@@ -330,7 +330,8 @@ header img {
 
 /* Dark/Light Mode Switch Button */
 .switch{
-  position: relative;
+  position: absolute;
+  right: 10px;
   display: flex;
   background-color: rgb(65, 33, 99);
   border-radius: 1000px;
