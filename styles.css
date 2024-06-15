@@ -128,14 +128,14 @@ header img {
 /*This is for the second card in the Timeline*/
 .card2 {
   position: relative;
-  margin: 0 0 20px 20px;
+  margin: 0 0 20px 21px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  padding: 12px 10px 0 10px;
-  gap: 10px;
+  padding: 10px 10px 0 10px;
+  gap: 15px;
   background-color: #fff;
   color: #222;
   border-top: 4px solid whitesmoke;
