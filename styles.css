@@ -18,8 +18,6 @@ html {
   scroll-behavior:smooth;
 }*/
 
-
-
 header {
   position: sticky;
   top: 0;
@@ -63,13 +61,6 @@ header img {
 }
 
 /* Main container */
-/*.main {
-  gap: 50px;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  height: 100%;
-  z-index: 0;
-}*/
 .main{
   display: flex;
   flex-direction: row;
@@ -80,8 +71,7 @@ header img {
 
 /* aside */
 .profile {
-  /*position: sticky;
-  top:70px;*/
+  /*position: sticky;*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -89,10 +79,15 @@ header img {
   width: 40%;
   margin: 0 1em 1em 4em;
   background-color: #fff;
-  color: gray;
+  color: #222;
   padding: 3em;
   gap: 15px;
   z-index: 0;
+}
+
+.profile.dark {
+  background-color: rgba(9,20,60,1);
+  color: #fff;
 }
 
 /* Timeline Container */
@@ -104,10 +99,18 @@ header img {
   z-index: 0;
 }
 
+.timeline.dark {
+  background-color: rgba(9,20,60,1);
+}
+
 /* Timeline LINE */
 .outer {
   border-left: 2px solid whitesmoke;
   padding-left: 20px;
+}
+
+.outer.dark {
+  border-left: 2px solid rebeccapurple;
 }
 
 /* Card container */
@@ -133,9 +136,15 @@ header img {
   max-width: 100%;
   padding: 30px 10px 10px 10px;
   gap: 10px;
-  background: #fff;
-  color: gray;
+  background-color: #fff;
+  color: #222;
   border-top: 4px solid whitesmoke;
+}
+
+.card2.dark {
+  background-color: rgba(9,20,60,1);
+  border-top: 4px solid rebeccapurple;
+  color: #f1f1f1;
 }
 
 .card2 .card2-description {
@@ -156,6 +165,10 @@ header img {
   padding: 10px 20px;
   gap: 20px;
   background: #f2f2f2;
+}
+
+.card2-footer-container.dark {
+  background-color: rebeccapurple;
 }
 
 .card2 .used-techs-container {
@@ -194,6 +207,11 @@ header img {
   position: relative;
 }
 
+.profile.dark h3,
+.title.dark {
+  color: #fff;
+}
+
 /* The globe icon on the timeline */
 .icon {
   position: absolute;
@@ -209,6 +227,11 @@ header img {
   color:  #f2f2f2;
   font-size: 20px;
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+
+.icon.dark {
+  background-color: rgba(9,20,60,1);
+  box-shadow: 0 0 0 4px rebeccapurple, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
 
 .card .details,
@@ -237,8 +260,11 @@ header img {
   text-align: center;
 }
 
-.timeline p,
-.profile p {
+.timeline.dark h2, .profile.dark h3, .timeline.dark p, .profile.dark p {
+  color: #f1f1f1;
+}
+
+.timeline p, .profile p {
   line-height: 1.5;
   font-size: 0.75rem;
   font-family: 'Montserrat', sans-serif;
