@@ -193,6 +193,15 @@ header img {
   gap: 20px;
 }
 
+/*.card2 .footer-a-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items:center;
+}*/
+
 .card2 .title-date {
   display: flex;
   align-items: center;
