@@ -430,13 +430,13 @@ header img {
   }
 
   .profile {
-     width: 45%; /* Ajustado para dejar espacio para la línea de tiempo */
-     margin-right: 2em; /* Espacio entre el perfil y la línea de tiempo */
+    width: 45%; /* Ajustado para dejar espacio para la línea de tiempo */
+    margin-right: 2em; /* Espacio entre el perfil y la línea de tiempo */
   }
 
   .timeline {
-     width: 55%; /* Ajustado para ocupar el espacio restante */
-     margin-left: 2em; /* Espacio entre el perfil y la línea de tiempo */
+    width: 55%; /* Ajustado para ocupar el espacio restante */
+    margin-left: 2em; /* Espacio entre el perfil y la línea de tiempo */
   }
 }
 
@@ -447,26 +447,35 @@ header img {
   }
 
   .profile,.timeline {
-     width: 100%; /* Ambos ocupan todo el ancho disponible */
-     margin: 0; /* Elimina el margen para que se apilen correctamente */
+    width: 100%; /* Ambos ocupan todo el ancho disponible */
+    margin: 0; /* Elimina el margen para que se apilen correctamente */
   }
 
   .timeline {
-     margin-top: 2em; /* Agrega un poco de espacio entre el perfil y la línea de tiempo cuando están apilados */
+    margin-top: 2em; /* Agrega un poco de espacio entre el perfil y la línea de tiempo cuando están apilados */
   }
 
   .logo-title {
-     flex-direction: row; /* Alinea el título y la imagen verticalmente */
+    flex-direction: row; /* Alinea el título y la imagen verticalmente */
   }
 }
 
  /* Media Query para pantallas extra pequeñas (very small smartphones, ~320px) */
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .profile,.timeline {
-     padding: 1em; /* Reduce el padding para adaptarse a pantallas aún más pequeñas */
+    padding: 1em;
   }
 
   .icon {
-     left: -35px; /* Ajusta la posición del ícono para evitar superposiciones */
+    left: -35px;
   }
 }
+
+/*Para el Alcatel 1*/
+
+
+
+
+
+
+
